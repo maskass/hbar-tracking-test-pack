@@ -1,0 +1,23 @@
+Explanation of file contents
+-------------------------------
+
+gainBGOcalibration.dat:
+	According to Nagata the columns in the calibration file correspond to:
+	
+	1: channel number
+	2: gain
+	3-5 : unknown, Nagata sais it is LED conditions while measuring, the
+	      gain data is already corrected for it
+
+hodoscopeTimingCorrectionTable.dat:
+	Contains timing and amplitude correction data for the hodoscope
+	
+	1: channel number
+	2: timingCorr Inner hodoscope
+	3: timingCorr Inner hodoscope
+	4: Amplitude correction factor inner hodoscope
+	5: Amplitude correction factor outer hodoscope
+
+	usage:
+	CF timing : Constant Fraction Downstream + (2 or 3)
+	Amplitude : Amplitude Downstream * (4 or 5)
